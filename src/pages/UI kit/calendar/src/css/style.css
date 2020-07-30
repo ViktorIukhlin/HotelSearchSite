@@ -114,6 +114,7 @@
   /*------------------------CALENDAR BEGIN------------------------*/
   .calendar{
     display: flex;
+    flex-direction: column;
     width: 320px;
     height: 369px;
     background: #FFFFFF;
@@ -180,6 +181,32 @@
   .calendar__nav_right{
     transform: rotate(180deg);
   }
-
-
+  .calendar__days{
+    margin: 19px 19.31px 0 19.31px;
+   
+  }
+  .calendar__daysOftheWeek {
+     
+  }
+  .calendar__daysOftheWeek p {
+    font-weight: bold;
+    font-size: 12px;
+    text-align: center;
+    color: #BC9CFF;
+    word-spacing: 20.2px;
+  }
+  .calendar__daysOftheMonth{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 15.5px;
+    margin-left: 1.5px;
+  }
+  .calendar__number{
+    display: block;
+    flex-basis: 14.275%;
+    font-size: 12px;
+    text-align: center;
+    color: rgba(31, 32, 65, 0.5);
+    padding-bottom: 16.2px;
+  }
   /*-------------------------CALENDAR END-------------------------*/
