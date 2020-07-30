@@ -182,7 +182,7 @@
     transform: rotate(180deg);
   }
   .calendar__days{
-    margin: 19px 19.31px 0 19.31px;
+    margin: 19px 19px 0 19px;
    
   }
   .calendar__daysOftheWeek {
@@ -198,7 +198,7 @@
   .calendar__daysOftheMonth{
     display: flex;
     flex-wrap: wrap;
-    margin-top: 15.5px;
+    margin-top: 7.6px;
     margin-left: 1.5px;
   }
   .calendar__number{
@@ -207,6 +207,38 @@
     font-size: 12px;
     text-align: center;
     color: rgba(31, 32, 65, 0.5);
-    padding-bottom: 16.2px;
+    padding:8.1px 0;
+  }
+  .calendar__number_data{
+    background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+    border-radius: 22px;
+    color: #FFFFFF;
+    font-weight: bold;
+  }
+  .calendar__number_active{
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    border-radius: 22px;
+    color: #FFFFFF;
+    font-weight: bold;
+  }
+  .calendar__number_line{
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    opacity: 0.25;
+  }
+  .calendar__footer {
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+
+    display: flex;
+    justify-content: space-between;
+    margin: 21px 19.35px 0;
+  }
+  .calendar__clear {
+    color: rgba(31, 32, 65, 0.5);
+  }
+  .calendar__sumbit {
+    color: #BC9CFF;
   }
   /*-------------------------CALENDAR END-------------------------*/
