@@ -16,7 +16,7 @@ const renderCalendar = () => {
     let firstDayIndex = date.getDay() - 1; if (firstDayIndex == -1) { firstDayIndex = 6; }
     const lastDatIndex = new Date(date.getFullYear(), date.getMonth() + 1, 0).getDay(),
         nextDays = 7 - lastDatIndex;
-    console.log(firstDayIndex);
+    
     const months = [
         "Январь",
         "Февраль",
