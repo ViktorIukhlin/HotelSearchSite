@@ -116,7 +116,6 @@
     display: flex;
     flex-direction: column;
     width: 320px;
-    height: 369px;
     background: #FFFFFF;
     border: 1px solid rgba(31, 32, 65, 0.25);
     box-sizing: border-box;
@@ -140,7 +139,6 @@
     display: flex;
     margin: 19px 0 0;
     height: 24px;
-     
   }
   .calendar__monthYear h3{
     font-size: 19px;
@@ -160,40 +158,14 @@
     margin: 19px;
   }
   .calendar__nav span{
-    position: absolute;
-    background-color: #BC9CFF;
-    width: 14px;
-    left: 6px;
-    height: 2px;
-    top: 10.8px;
+    margin-top: 2px;
+    font-size: 24px;
+    line-height: 20px;
+    color: #BC9CFF;
   }
-  .calendar__nav:before,
-  .calendar__nav:after{
-    content: '';
-    background-color: #BC9CFF;
-    position: absolute;
-    width:11px;
-    height: 2px;
-  }
-  .calendar__nav:before{
-    transform: rotate(-45deg);
-    left: 3.5px;
-    top: 7.7px;
-  }
-  .calendar__nav:after{
-    transform: rotate(45deg);
-    left: 3.5px;
-    bottom: 7.8px;
-  }
-  .calendar__nav_right{
-    transform: rotate(180deg);
-  }
+  
   .calendar__days{
     margin: 19px 19px 0 19px;
-   
-  }
-  .calendar__daysOftheWeek {
-     
   }
   .calendar__daysOftheWeek p {
     font-weight: bold;
@@ -216,6 +188,12 @@
     color: rgba(31, 32, 65, 0.5);
     padding:8.1px 0;
   }
+  .calendar__number_today{
+    background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+    border-radius: 22px;
+    color: #FFFFFF;
+    font-weight: bold;
+  }
   .calendar__number_data{
     background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
     border-radius: 22px;
@@ -232,6 +210,9 @@
     background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
     opacity: 0.25;
   }
+  .calendar__priev-date, .calendar__next-date{
+    color: rgba(31, 32, 65, 0.25);
+  }
   .calendar__footer {
     font-weight: bold;
     font-size: 12px;
@@ -240,7 +221,7 @@
 
     display: flex;
     justify-content: space-between;
-    margin: 21px 19.35px 0;
+    margin: 21px 19.35px 19px;
   }
   .calendar__clear {
     color: rgba(31, 32, 65, 0.5);
