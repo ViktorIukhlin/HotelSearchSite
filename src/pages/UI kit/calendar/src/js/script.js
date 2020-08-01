@@ -52,18 +52,21 @@ const renderCalendar = () => {
     const days = document.querySelectorAll('[data-day]');
 
     let counter = 0;
+    let choosenDate = {};
 
     function remove() {
         days.forEach(day => {
             day.classList.remove("calendar__number_active");
+            console.log(`${choosenDate[0]} ${choosenDate[1]}`);
             counter = 0;
         });
     }
 
     days.forEach(day => {
-        day.addEventListener('click', () => {
+        day.addEventListener('click', (e) => {
             if(counter == 2){remove();}
             day.classList.toggle('calendar__number_active');
+            choosenDate[counter]= e.toElement.innerText;
             counter++;
         });
     });
