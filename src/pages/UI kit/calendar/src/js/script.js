@@ -51,20 +51,28 @@ const renderCalendar = () => {
 
     const days = document.querySelectorAll('[data-day]');
 
-    days.forEach(day => {
-        day.addEventListener('click', () => {
-            day.classList.toggle('calendar__number_active');
-        });
-    });
+    let counter = 0;
 
-    clear.addEventListener('click', () => {
+    function remove() {
         days.forEach(day => {
             day.classList.remove("calendar__number_active");
+            counter = 0;
         });
+    }
+
+    days.forEach(day => {
+        day.addEventListener('click', () => {
+            if(counter == 2){remove();}
+            day.classList.toggle('calendar__number_active');
+            counter++;
+        });
+    });
+    clear.addEventListener('click', () => {
+        remove();
     });
 
     apply.addEventListener('click', () => {
-        console.log(`Hello`);
+        console.log(counter);
     });
 };
 
